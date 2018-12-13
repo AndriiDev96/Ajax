@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Ajax</title>
+		<!-- Bootstrap core CSS -->
+		<link href="framework/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Material Design Bootstrap -->
+		<link href="framework/css/mdb.min.css" rel="stylesheet">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+		<!-- My css -->
+		<link rel="stylesheet" href="css/style.min.css">
+	</head>
+	<body>
+
+		<!-- Button Top -->
+		<div class="backTopButton">
+			<a href="#!" class="topBtn"><i class="fas fa-arrow-up"></i></a>
+		</div>
+
+		<section class="top-navbar">
+			<nav class="navbar navbar-expand-lg fixed-top">
+				<div class="container">
+					<a class="navbar-brand" href="#">Users</a>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="#" data-toggle="modal"></a>
+							</li>
+						</ul>
+						<span class="navbar-text white-text">
+							Add new User
+							<a href="#!" data-toggle="modal" data-target="#modalAddUser"> <i
+									class="fas fa-user-plus"></i></a>
+						</span>
+					</div>
+				</div>
+			</nav>
+
+			<div class="modal fade" id="modalAddUser">
+				<div class="modal-dialog cascading-modal modal-avatar modal-sm">
+					<div class="modal-content">
+						<!--Header-->
+						<div class="modal-header">
+							<img src="img/face.jpeg" alt="avatar" class="rounded-circle
+								img-responsive">
+						</div>
+						<!--Body-->
+						<div class="modal-body text-center mb-1">
+							<h5 class="mt-1 mb-2">Add User</h5>
+							<form id="add-user-form">
+								<div class="md-form mb-5">
+									<i class="fa fa-user prefix grey-text"></i>
+									<input type="text" id="id-name" class="form-control">
+									<label for="id-name">Name</label>
+								</div>
+								<div class="md-form">
+									<i class="fas fa-birthday-cake prefix grey-text"></i>
+									<input type="number" id="id-age" class="form-control">
+									<label for="id-age">Age</label>
+								</div>
+								<div class="text-center mt-4">
+									<button type="submit" class="btn btn-add-user mt-1"
+										data-dismiss="modal">Add</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="intro-text">
+			<div class="center-text">
+				<h2 class="text-center all-users-text">All Users</h2>
+				<hr>
+			</div>
+		</section>
+
+		<section id="pull-data">
+			<div class="container pt-2">
+				<div class="pull-users">
+					<h5><i class="fas fa-cloud-download-alt"></i><br>To pull users out of the
+						server, click here.</h5>
+				</div>
+			</div>
+		</section>
+
+		<section class="user-section">
+			<div class="container user-cards">
+
+			</div>
+		</section>
+
+		<!-- Modal top -->
+		<div class="modal fade top" id="editDataUser">
+			<div class="modal-dialog modal-frame modal-top">
+				<div class="modal-content">
+					<div class="modal-body">
+						<h4 class="text-center">Edit User</h4>
+						<hr>
+						<div class="d-flex align-items-center pt-4">
+							<form class="mr-5" id="edid-user-form">
+								<div class="row">
+									<div class="col">
+										<div class="md-form mt-0">
+											<input type="text" class="form-control" id="edit-name"
+												placeholder="Name">
+										</div>
+									</div>
+									<div class="col">
+										<div class="md-form mt-0">
+											<input type="text" class="form-control" id="edit-age"
+												placeholder="Age">
+										</div>
+									</div>
+								</div>
+							</form>
+							<button type="button" class="btn" id="btnSaveChange" data-dismiss="modal">Save changes</button>
+							<button type="button" class="btn" id="btnCansel" data-dismiss="modal">Cancel</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- JQuery -->
+		<script type="text/javascript" src="framework/js/jquery-3.3.1.min.js"></script>
+		<!-- Bootstrap tooltips -->
+		<script type="text/javascript" src="framework/js/popper.min.js"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script type="text/javascript" src="framework/js/bootstrap.min.js"></script>
+		<!-- MDB core JavaScript -->
+		<script type="text/javascript" src="framework/js/mdb.min.js"></script>
+		<!-- Sweetalert (Modal window)-->
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<!-- My Script-->
+		<script src="js/script-min.js"></script>
+	</body>
+</html>
